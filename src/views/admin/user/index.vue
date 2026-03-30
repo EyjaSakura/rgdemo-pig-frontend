@@ -79,21 +79,21 @@
 						<el-table-column :label="$t('sysuser.username')" prop="username" fixed="left" show-overflow-tooltip></el-table-column>
 						<el-table-column :label="$t('sysuser.name')" prop="name" show-overflow-tooltip></el-table-column>
 						<el-table-column :label="$t('sysuser.phone')" prop="phone" show-overflow-tooltip></el-table-column>
-						<el-table-column :label="$t('sysuser.post')" show-overflow-tooltip>
+						<!-- <el-table-column :label="$t('sysuser.post')" show-overflow-tooltip>
 							<template #default="scope">
 								<el-tag v-for="(item, index) in scope.row.postList" :key="index">{{ item.postName }}</el-tag>
 							</template>
-						</el-table-column>
+						</el-table-column> -->
 						<el-table-column :label="$t('sysuser.role')" show-overflow-tooltip>
 							<template #default="scope">
 								<el-tag v-for="(item, index) in scope.row.roleList" :key="index">{{ item.roleName }}</el-tag>
 							</template>
 						</el-table-column>
-						<el-table-column :label="$t('sysuser.lockFlag')" show-overflow-tooltip>
+						<!-- <el-table-column :label="$t('sysuser.lockFlag')" show-overflow-tooltip>
 							<template #default="scope">
 								<el-switch v-model="scope.row.lockFlag" @change="changeSwitch(scope.row)" active-value="0" inactive-value="9"></el-switch>
 							</template>
-						</el-table-column>
+						</el-table-column> -->
 						<el-table-column :label="$t('sysuser.createTime')" prop="createTime" show-overflow-tooltip width="180"></el-table-column>
 						<el-table-column :label="$t('common.action')" width="160" fixed="right">
 							<template #default="scope">
